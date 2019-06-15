@@ -7,15 +7,13 @@
     <meta name="description" content="Test your knowledge of 5th grade subject material">
     <link href="index.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Metrophobic" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="datastore.js"></script>
-    <script src="index.js"></script>
+    
   </head>
-  <body>
+  <body class="intro">
     <header role="banner">
       <div class="logo-container">
         <a href="index.html">
-          <img class="logo" src="http://camaraderiemom.com/wp-content/uploads/2018/01/635817379401360517-School-building-icon-800x400.jpg" alt="school icon"/>
+          <img class="logo" src="https://cdn2.iconfinder.com/data/icons/bubble-education-icons-1/360/Ruler_and_Pencil-512.png" alt="pencil icon"/>
         </a>
       </div>
       <div class="qands-container">
@@ -25,12 +23,57 @@
         </ul>
       </div>
     </header>
+    
     <main role="main">
+      <Section class="quizstart">
       <div class="quizStart-container">
         <h1>Are you Smarter Than My 5th Graders?</h1>
         <button type="button" class="startButton">Let's go!</button>
       </div>
-      <div class="questionAnswerForm"></div>
+      </Section>
+
+      <Section class="questions">
+        <form class="qanda-container"action="/some-server-endpoint" method ="post">
+         <fieldset>
+        <legend class="question">What process is the opposite of Evaporation?</legend>
+        <input type="radio" name="science" id="ans-Evaporation-1" value="0" checked>
+        <label for="ans-Evaporation-1">Evaporation.</label>
+        <br>
+        <input type="radio" name="science" id="ans-Precipitation-2" value="1">
+        <label for="ans-Precipitation-2">Precipitation</label>
+        <br>
+        <input type="radio" name="science" id="ans-Condensation-3" value="2">
+        <label for="ans-Condensation-3">Condensation</label>
+        <br>
+        <input type="radio" name="science" id="ans-Boiling_Point-4" value="3">
+        <label for="ans-Boiling_Point-4">Boiling Point</label>
+      </fieldset>
+
+      <button type="submit">Submit</button> 
+      </Section>
+
+      <Section class="correction-message-container">
+        <h1 class="Message">That's Incorrect! Need help? Let's ask the students.</h1>
+        <h3 class="Message">The correct answer is: Precipitation</h3>
+        <button type="button" class="nextButton">Next</button>
+      </div>
+      </Section>
+
+      <Section class="correct-message-container">
+        <h1 class="Message">That's Correct! Keep it up!</h1>
+        <button type="button" class="nextButton">Next</button>
+      </Section>
+
+      <Section class="endofquiz-message-container">
+        <h1 class= "Message">End of Quiz</h1>
+        <h2 class="final-score">Score = ?/10</h2>
+        <button type="button" class="restartButton">Restart Quiz</button>
+      </Section>
+
     </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="datastore.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

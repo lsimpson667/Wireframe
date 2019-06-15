@@ -18,7 +18,7 @@ body {
 
 .qands {
 display: flex;
-  flex-direction: row;  
+  flex-direction: row;   
   justify-content: space-evenly;
   list-style: none;   
 }
@@ -26,7 +26,8 @@ display: flex;
 
 .answers {
   display: flex;
-  flex-direction: row;  
+  flex-direction: column;  
   justify-content: space-evenly;
   list-style: none;
+  
 }
